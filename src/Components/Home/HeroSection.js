@@ -17,7 +17,7 @@ const HeroSection = () => {
   }, []); // The empty dependency array ensures this effect runs only once
 
   return (
-    <div className="relative">
+    <div className="relative mb-8">
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
         {isH1Visible && (
           <h1 className="text-white text-4xl font-bold">
