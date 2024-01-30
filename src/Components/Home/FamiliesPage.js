@@ -1,15 +1,21 @@
 import React from "react";
 import ImageComponent from "../ImageComponent";
+import "../Home/FamiliesPage.css";
 const FamiliesPage = () => {
   return (
-    <section className="h-full w-full  p-4 flex justify-center items-center">
+    <section className="h-full w-full p-4 flex justify-center items-center">
       <div className="w-3/4 h-3/4 flex flex-col items-center">
-        <img
-          src="https://www.raymondjames.com/-/media/rj/advisor-sites/global/components/niche-tiles/families.jpg?la=en&hash=4C8CBA92D1E9EFE3ED2712B0C3699A27"
-          alt="img not loaded"
-          className="w-full h-full object-cover rounded hover:shadow-lg"
-        />
-        <div className="mt-6  flex flex-col items-center gap-4 group">
+        {/* Families image */}
+        <div className="group w-full h-full relative overflow-hidden hover:shadow-lg rounded">
+          <img
+            src="https://www.raymondjames.com/-/media/rj/advisor-sites/global/components/niche-tiles/families.jpg?la=en&hash=4C8CBA92D1E9EFE3ED2712B0C3699A27"
+            alt="img not loaded"
+            className="w-full h-full object-cover rounded"
+          />
+          <div className="bg-brownish-overlay absolute inset-0 opacity-0 transition-opacity group-hover:opacity-70"></div>
+        </div>
+
+        <div className="mt-6 flex flex-col items-center gap-4 group">
           <h1 className="text-stone-700 text-xl font-bold mt-6">Families</h1>
           <h3 className="text-stone-600 text-lg font-semibold mt-6 group-hover:opacity-0">
             Learn More
