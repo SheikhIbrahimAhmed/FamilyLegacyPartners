@@ -1,10 +1,11 @@
 import React from "react";
-import HeroSection from "../Components/Home/HeroSection";
-import VideoPage from "../Components/Home/VideoPage";
+import AboutUs from "../Components/AboutUs/AboutUs";
 import FamiliesPage from "../Components/Home/FamiliesPage";
-import Quote from "../Components/Home/Quote";
 import Footer from "../Components/Home/Footer";
+import HeroSection from "../Components/Home/HeroSection";
+import Quote from "../Components/Home/Quote";
 import Slider from "../Components/Home/Slider";
+import VideoPage from "../Components/Home/VideoPage";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Quote />
       <Slider />
       <Footer />
+      <AboutUs />
     </>
   );
 };

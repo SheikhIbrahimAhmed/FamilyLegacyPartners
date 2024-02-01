@@ -3,14 +3,12 @@ import React, { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const [isTextFocused, setIsTextFocused] = useState(false);
-  const [isH1Visible, setIsH1Visible] = useState(true);
 
   useEffect(() => {
-    // Set a timeout to hide the h1 and show the p after a delay (e.g., 3 seconds)
+    // Set a timeout to show the p after a delay (e.g., 3 seconds)
     const timeoutId = setTimeout(() => {
-      setIsH1Visible(false);
       setIsTextFocused(true);
-    }, 3000);
+    }, 1000);
 
     // Clear the timeout when the component unmounts or when the timeout is executed
     return () => clearTimeout(timeoutId);
@@ -19,11 +17,9 @@ const HeroSection = () => {
   return (
     <div className="relative mb-8">
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        {isH1Visible && (
-          <h1 className="text-white text-4xl font-bold">
-            A Personalized Approach to managing wealth
-          </h1>
-        )}
+        <h1 className="text-white text-4xl font-bold">
+          A Personalized Approach to managing wealth
+        </h1>
         <p
           className={`text-white p-4 text-lg font-bold leading-relaxed text-center font-sans ${
             isTextFocused ? "" : "hidden"
@@ -34,7 +30,7 @@ const HeroSection = () => {
             fontSize: "27px",
             lineHeight: "28px",
             transition: "opacity 1s ease-in-out", // Added a fade-in effect
-            opacity: isH1Visible ? 1 : 0, // Conditional opacity based on isH1Visible
+            opacity: isTextFocused ? 1 : 0, // Conditional opacity based on isTextFocused
           }}
         >
           We aim to be your personal CFO. Rely on us to help provide you with
