@@ -1,5 +1,5 @@
-import image from '../../../src/assets/Journey 03.jpg';
-import React, { useState, useEffect } from 'react';
+import image from "../../../src/assets/Journey 03.jpg";
+import React, { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const [isTextFocused, setIsTextFocused] = useState(false);
@@ -26,26 +26,31 @@ const HeroSection = () => {
         )}
         <p
           className={`text-white p-4 text-lg font-bold leading-relaxed text-center font-sans ${
-            isTextFocused ? '' : 'hidden'
+            isTextFocused ? "" : "hidden"
           }`}
           style={{
-            fontFamily: 'Source Sans Pro',
+            fontFamily: "Source Sans Pro",
             fontWeight: 300,
-            fontSize: '27px',
-            lineHeight: '28px',
-            transition: 'opacity 1s ease-in-out', // Added a fade-in effect
+            fontSize: "27px",
+            lineHeight: "28px",
+            transition: "opacity 1s ease-in-out", // Added a fade-in effect
             opacity: isH1Visible ? 1 : 0, // Conditional opacity based on isH1Visible
           }}
         >
-          We aim to be your personal CFO. Rely on us to help provide you with financial planning and advice that encompasses your whole life. We strive to create a deep and enduring relationship with you and make an emotional investment in your family across generations.
+          We aim to be your personal CFO. Rely on us to help provide you with
+          financial planning and advice that encompasses your whole life. We
+          strive to create a deep and enduring relationship with you and make an
+          emotional investment in your family across generations.
         </p>
       </div>
       <img
         src={image}
         alt="Family"
-        className={`w-full h-auto ${isTextFocused ? 'filter brightness-50' : ''}`}
+        className={`w-full h-auto ${
+          isTextFocused ? "filter brightness-50" : ""
+        }`}
         style={{
-          transition: 'opacity 1s ease-in-out', // Added a fade-in effect
+          transition: "opacity 1s ease-in-out", // Added a fade-in effect
           opacity: isTextFocused ? 1 : 0, // Conditional opacity based on isTextFocused
         }}
       />

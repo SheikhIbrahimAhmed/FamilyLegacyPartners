@@ -11,30 +11,21 @@ const Footer = () => {
         <div className="flex flex-col items-center w-1/2">
           <div className="flex items-center gap-2 mr-48">
             <FontAwesomeIcon className="text-gray-400" icon={faPhone} />
-            <a
-              className="text-xl text-yellow-800"
-              href="https://www.google.com"
-            >
+            <a className="text-xl text-685b44" href="https://www.google.com">
               734.667.1415
             </a>
           </div>
-          <p className="text-md text-yellow-800 ">
+          <p className="text-md text-685b44 ">
             Family Legacy Wealth Partners
             <br /> 843 Penniman Ave | Plymouth, MI 48170 <br />{" "}
-            <a
-              className="text-xl text-yellow-800"
-              href="https://www.google.com"
-            >
+            <a className="text-xl text-685b44" href="https://www.google.com">
               F: 734.259.3074
             </a>
           </p>
 
           <div className="flex items-center gap-4 mr-32">
             <FontAwesomeIcon className="text-gray-400" icon={faLocationDot} />
-            <a
-              className="text-xl text-yellow-800"
-              href="https://www.google.com"
-            >
+            <a className="text-xl text-685b44" href="https://www.google.com">
               Maps and Directions
             </a>
           </div>
