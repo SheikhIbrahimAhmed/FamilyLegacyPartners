@@ -2,7 +2,7 @@ import image from "../../../src/assets/Journey 03.jpg";
 import React, { useState, useEffect } from "react";
 
 const HeroSection = () => {
-  const [isTextFocused, setIsTextFocused] = useState(false);
+  const [isTextFocused, setIsTextFocused] = useState(true);
 
   useEffect(() => {
     // Set a timeout to show the p after a delay (e.g., 3 seconds)
@@ -16,14 +16,12 @@ const HeroSection = () => {
 
   return (
     <div className="relative mb-8">
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
         <h1 className="text-white text-4xl font-bold">
           A Personalized Approach to managing wealth
         </h1>
         <p
-          className={`text-white p-4 text-lg font-bold leading-relaxed text-center font-sans ${
-            isTextFocused ? "" : "hidden"
-          }`}
+          className={`text-white p-4 text-lg font-bold leading-relaxed text-center font-sans ${isTextFocused ? "" : "hidden"}`}
           style={{
             fontFamily: "Source Sans Pro",
             fontWeight: 300,
@@ -42,9 +40,8 @@ const HeroSection = () => {
       <img
         src={image}
         alt="Family"
-        className={`w-full h-auto ${
-          isTextFocused ? "filter brightness-50" : ""
-        }`}
+        className={`w-full h-auto ${isTextFocused ? "filter brightness-50" : ""
+          }`}
         style={{
           transition: "opacity 1s ease-in-out", // Added a fade-in effect
           opacity: isTextFocused ? 1 : 0, // Conditional opacity based on isTextFocused
