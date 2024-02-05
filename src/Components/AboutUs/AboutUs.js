@@ -1,15 +1,11 @@
-import React from "react";
-import Header from "../shared/Header/Header";
-import Navbar from "../shared/Navbar/Navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import AboutUsComponent from "./AboutUsComponent";
 
 const AboutUs = () => {
   return (
     <div>
-      <Header />
-      <Navbar />
       <AboutUsComponent
         image="https://www.raymondjames.com/-/media/rj/advisor-sites/sites/f/a/familylegacypartners/images/bio-headshot-lindsay-corneille.jpg?h=248&w=206&la=en&hash=2DA200B2FEE7D12B394BFC334B714D80"
         imagetitle="Lindsay Corneille, CFP®"
