@@ -5,10 +5,11 @@ import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div className="mt-6 p-3">
-      <img className="mx-auto" src={image} alt="Family Legacy" />
-
-      <div className="mt-4 flex">
-        <div className="flex flex-col items-center w-1/2">
+      <div>
+        <img className="mx-auto" src={image} alt="Family Legacy" />
+      </div>
+      <div className="mt-4 flex flex-col items-center gap-y-4 md:flex-row md:items-start">
+        <div className="flex flex-col items-center w-full border border-685b44 p-4 rounded-md md:mt-0">
           <div className="flex items-center gap-2 mr-48">
             <FontAwesomeIcon className="text-gray-400" icon={faPhone} />
             <a className="text-xl text-685b44" href="https://www.google.com">
@@ -30,7 +31,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full border border-685b44 p-4 rounded-md">
           <p className="text-xs text-gray-700">
             Raymond James financial advisors may only conduct business with
             residents of the states and/or jurisdictions for which they are

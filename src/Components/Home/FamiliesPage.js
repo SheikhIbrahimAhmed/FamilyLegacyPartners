@@ -3,7 +3,7 @@ import ImageComponent from "../ImageComponent";
 import "../Home/FamiliesPage.css";
 const FamiliesPage = () => {
   return (
-    <section className="h-full w-full p-4 flex justify-center items-center">
+    <section className="h-full w-full p-8 flex justify-center lg:mt-16 ">
       <div className="w-3/4 h-3/4 flex flex-col items-center">
         {/* Families image */}
         <div className="group w-full h-full relative overflow-hidden hover:shadow-lg rounded">
@@ -24,8 +24,7 @@ const FamiliesPage = () => {
             A programmatic approach to wealth management
           </p>
         </div>
-
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-y-4  md:flex-row md:gap-x-16 ">
           <ImageComponent
             imageUrl="https://www.raymondjames.com/-/media/rj/advisor-sites/global/components/niche-tiles/retirees2.jpg?la=en&hash=967B11E286425111233FD23314F0B070"
             title="RETIREES"
