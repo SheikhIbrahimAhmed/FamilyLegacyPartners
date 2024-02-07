@@ -5,7 +5,6 @@ const FamiliesPage = () => {
   return (
     <section className="h-full w-full p-8 flex justify-center lg:mt-16 ">
       <div className="w-3/4 h-3/4 flex flex-col items-center">
-        {/* Families image */}
         <div className="group w-full h-full relative overflow-hidden hover:shadow-lg rounded">
           <img
             src="https://www.raymondjames.com/-/media/rj/advisor-sites/global/components/niche-tiles/families.jpg?la=en&hash=4C8CBA92D1E9EFE3ED2712B0C3699A27"

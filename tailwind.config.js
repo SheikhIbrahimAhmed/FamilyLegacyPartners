@@ -13,9 +13,6 @@ module.exports = {
       borderColor: {
         "custom-color": "#685b44",
       },
-      NavbarbackgroundColor: {
-        "Navbarbg-color": "#9d8b6a",
-      },
     },
   },
   plugins: [],

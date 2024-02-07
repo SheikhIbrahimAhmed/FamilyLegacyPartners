@@ -14,10 +14,10 @@ const ImageComponent = ({ imageUrl, title, subTitle, description }) => {
       <h1 className="text-stone-700 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold mt-6 relative z-10">
         {title}
       </h1>
-      <h2 className="transition-opacity text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl  opacity-100 group-hover:opacity-0 duration-1000 ease-in-out relative z-10">
+      <h2 className="transition-opacity  sm:text-sm md:text-base lg:text-base   opacity-100 group-hover:opacity-0 duration-1000 ease-in-out relative z-10">
         {subTitle}
       </h2>
-      <p className="opacity-0 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl  transition-opacity group-hover:opacity-100 duration-1000 ease-in-out relative z-10">
+      <p className="opacity-0 text-xs sm:text-sm md:text-sm lg:text-sm transition-opacity group-hover:opacity-100 duration-1000 ease-in-out relative z-10">
         {description}
       </p>
     </div>

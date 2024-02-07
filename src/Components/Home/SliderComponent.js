@@ -2,7 +2,7 @@ import React from "react";
 
 const SliderComponent = ({ image, heading, subheading, paragraph }) => {
   return (
-    <div className="relative w-full h-full mt-8 p-8 shadow-lg mb-6">
+    <div className="relative w-full h-full mt-8 p-8 shadow-lg">
       <img
         src={image}
         alt="Slider img"

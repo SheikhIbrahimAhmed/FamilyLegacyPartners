@@ -5,7 +5,7 @@ import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div className="mt-6 p-3">
-      <div>
+      <div className=" border border-685b44">
         <img className="mx-auto" src={image} alt="Family Legacy" />
       </div>
       <div className="mt-4 flex flex-col items-center gap-y-4 md:flex-row md:items-start">

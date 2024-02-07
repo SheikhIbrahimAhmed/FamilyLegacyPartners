@@ -4,7 +4,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div className="relative mb-8">
-      <div className="flex flex-col absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center sm:top-72 sm:left-1/2 md:top-80 md:left-1/2 lg:top-96 lg:left-1/2 xl:left-1/2 md:gap-y-4 lg:gap-y-6">
+      <div className="flex flex-col absolute z-10 top-52 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center sm:top-72 sm:left-1/2 md:top-80 md:left-1/2 lg:top-64 lg:left-1/2 xl:left-1/2 md:gap-y-4 lg:gap-y-6 ">
         <h1 className="text-white text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold sm:mb-12 lg:mt-72">
           A Personalized Approach to Managing Wealth
         </h1>
