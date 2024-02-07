@@ -16,8 +16,8 @@ const AboutUsComponent = ({
   paragraph3,
 }) => {
   return (
-    <div className="flex flex-col items-center p-8 shadow-xl mt-32 md:flex-row md:justify-center md:gap-x-8 md:mt-2">
-      <div className="flex flex-col items-center w-full md:w-1/4 flex-shrink-0 md:mt-0 md:mb-12">
+    <div className="flex flex-col items-center p-8 shadow-xl mt-32 md:flex-row md:justify-center md:gap-x-8 md:mt-2 xl:mt-12">
+      <div className="flex flex-col items-center w-full md:w-1/4 flex-shrink-0 md:mt-0 md:mb-12 ">
         <img src={image} alt="img not loaded" />
         <h1 className="mt-6 pb-2 text-685b44 font-sans text-xl font-bold border-b border-custom-color">
           {imagetitle}

@@ -1,6 +1,6 @@
 import React from "react";
 import "video-react/dist/video-react.css";
-import video from "../../assets/video1.mp4";
+import video from "../../assets/Video1.mp4";
 
 const VideoPage = () => {
   return (

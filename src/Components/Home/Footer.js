@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../../src/assets/Family Legacy.png";
+import image from "../../../src/assets/logo EMWA.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
