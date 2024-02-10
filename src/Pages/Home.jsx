@@ -21,7 +21,6 @@ const Home = () => {
       <FamiliesPage />
       <Quote />
       <Slider />
-      <Footer />
       {/* <AboutUs /> */}
     </>
   );

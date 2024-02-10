@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import image from "../../../assets/logo EMWA.png";
+import { Link } from "react-router-dom";
+
 const Navbar = ({ bgNavbar }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -54,13 +56,13 @@ const Navbar = ({ bgNavbar }) => {
           <div className=" relative  h-32 items-center justify-between">
             <div className=" sm:flex sm:flex-col sm:items-center justify-center lg:items-center">
               <div className="flex flex-col justify-center mt-2  sm:flex-row sm:space-x-2  md:space-x-3 lg:space-x-4 lg:items-center">
-                <a
-                  href="#https://www.google.com"
+                <Link
+                  to={"/"}
                   className="text-white  rounded-md p-2 pb-1 text-xs font-normal leading-5 tracking-wider sm:text-xs md:text-sm lg:text-base  hover:bg-gray-900"
                   aria-current="page"
                 >
                   HOME
-                </a>
+                </Link>
                 <a
                   href="#https://www.google.com"
                   className="text-white  rounded-md p-2 pb-1 text-xs font-normal leading-5 tracking-wider sm:text-xs md:text-sm lg:text-base hover:bg-gray-900"
@@ -68,13 +70,13 @@ const Navbar = ({ bgNavbar }) => {
                 >
                   SERVICES
                 </a>
-                <a
-                  href="#https://www.google.com"
+                <Link
+                  to={"/about-us"}
                   className="text-white  rounded-md p-2 pb-1 text-xs font-normal leading-5 tracking-wider sm:text-xs md:text-sm lg:text-base hover:bg-gray-900"
                   aria-current="page"
                 >
                   ABOUT US
-                </a>
+                </Link>
 
                 <a
                   href="#https://www.google.com"
